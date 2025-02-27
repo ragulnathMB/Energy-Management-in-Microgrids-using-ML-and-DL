@@ -1,0 +1,122 @@
+.mainContainer {
+    width: 60%;
+    max-height: 80vh; /* Ensures it doesn't exceed the viewport height */
+    overflow-y: auto; /* Enables scrolling */
+    margin: auto;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+}
+
+.header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #313942, #2b353f);
+    color: white;
+    border-radius: 10px 10px 0 0;
+    animation: slideDown 0.6s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 10px;
+    animation: scaleUp 0.5s ease-in-out;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 50vh; /* Prevents it from overflowing */
+    overflow-y: auto; /* Makes the content scrollable */
+}
+
+ul li {
+    background: #ffffff;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+ul li:hover {
+    transform: scale(1.05);
+}
+
+.submitBtn {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #1d1e1e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 0.8s ease-in-out;
+    position: sticky;
+    bottom: 10px;
+    z-index: 10;
+}
+
+.submitBtn:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

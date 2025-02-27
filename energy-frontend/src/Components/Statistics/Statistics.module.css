@@ -1,0 +1,160 @@
+.statisticsContainer {
+  width: 100%;
+  max-width: 1200px;
+  height: 85vh;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  bottom: 130px;
+  right: 30px;
+  background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+}
+
+.heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2021;
+  margin-bottom: 24px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.chartTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.scrollContainer {
+  width: 100%;
+  margin-bottom: 32px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrollContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.chartWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customTooltip {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ddd;
+}
+
+.label {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.percent {
+  margin: 0;
+  color: #666;
+}
+
+.submitBtn {
+  position: fixed;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  z-index: 200;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.submitBtn:hover {
+  background: #949595;
+}
+
+/* Improve the scrollbar styling */
+.statisticsContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.statisticsContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.statisticsContainer::-webkit-scrollbar-thumb {
+  background: #bbc1c8;
+  border-radius: 10px;
+}
+
+.statisticsContainer::-webkit-scrollbar-thumb:hover {
+  background: #a0a8b2;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .statisticsContainer {
+    padding: 15px;
+    height: 80vh;
+  }
+  
+  .heading {
+    font-size: 22px;
+    padding: 10px 0;
+  }
+  
+  .chartTitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  
+  .scrollContainer {
+    padding: 15px;
+    margin-bottom: 24px;
+  }
+  
+  .submitBtn {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Animation for charts */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.scrollContainer {
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-fill-mode: both;
+}
+
+.scrollContainer:nth-child(1) { animation-delay: 1s; }
+.scrollContainer:nth-child(2) { animation-delay: 1s; }
+.scrollContainer:nth-child(3) { animation-delay: 1s; }
+.scrollContainer:nth-child(4) { animation-delay: 1s; }

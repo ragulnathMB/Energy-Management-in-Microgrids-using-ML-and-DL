@@ -1,0 +1,64 @@
+.mainBody {
+    width: 400px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+    left: 500px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.subBody {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.subBody h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #222;
+}
+
+.subBody ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.subBody li {
+    margin-bottom: 5px;
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.submitBtn {
+    background-color: #090909;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submitBtn:hover {
+    background-color: #eb9826;
+}
