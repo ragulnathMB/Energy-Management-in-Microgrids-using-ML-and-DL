@@ -4,10 +4,9 @@
 Microgrids integrate **renewable energy sources**, **energy storage systems**, and **dynamic loads**, making energy management complex. Efficiently managing energy within microgrids is crucial for:
 - Maximizing **renewable energy utilization**
 - Reducing **operational costs**
-- Enhancing **grid stability**
 - Improving **energy efficiency**
 
-Traditional methods struggle with challenges like **load forecasting**, **renewable energy variability**, and **real-time optimization**. Our solution leverages **Machine Learning (ML) and Deep Learning (DL)** to address these issues effectively. 🧠⚡
+Traditional methods struggle with challenges like **load forecasting**, **renewable energy variability**, and **real-time optimization**. Our solution leverages **XG Boost (ML) and Deep Neural Network (DL)** to address these issues effectively. 🧠⚡
 
 ---
 
@@ -15,21 +14,18 @@ Traditional methods struggle with challenges like **load forecasting**, **renewa
 ✅ **Demand Forecasting**: Predict future energy demands using ML/DL models to optimize resource allocation.  
 ✅ **Renewable Energy Forecasting**: Predict solar/wind generation to manage intermittency and improve scheduling.  
 ✅ **Energy Storage Optimization**: Optimize charging/discharging schedules to balance supply and demand.  
-✅ **Cost Optimization**: Reduce operational costs by optimizing energy purchasing and off-peak usage.  
-✅ **Fault & Anomaly Detection**: Enhance reliability by detecting and mitigating system faults.  
-✅ **Grid Stability**: Predict and prevent voltage/frequency fluctuations to ensure smooth operation.  
+✅ **Cost Optimization**: Reduce operational costs by optimizing energy purchasing and off-peak usage.    
 ✅ **Real-Time Control**: Enable dynamic decision-making for energy distribution based on live data.  
 
 ---
 
 ## 🏗️ Tech Stack
 - **Python** 🐍
-- **Machine Learning & Deep Learning** (TensorFlow, PyTorch, Scikit-learn)
+- **Machine Learning & Deep Learning** (TensorFlow, Scikit-learn)
 - **Data Processing** (Pandas, NumPy)
-- **Visualization** (Matplotlib, Seaborn)
+- **Visualization** (Matplotlib, recharts)
 - **Frontend** (React.js - for visualization)
-- **Backend** (Flask/FastAPI - for real-time analysis)
-- **Database** (PostgreSQL / Firebase)
+- **Backend** (FastAPI - for real-time analysis)
 
 ---
 
@@ -50,7 +46,6 @@ Our ML/DL models successfully optimize **energy forecasting, storage, and cost m
 ✅ **Accurate demand forecasting** with minimal error  
 ✅ **Optimized energy storage usage** to prevent wastage  
 ✅ **Reduction in operational costs** by smart scheduling  
-✅ **Improved grid stability** with real-time dynamic adjustments  
 
 ---
 
