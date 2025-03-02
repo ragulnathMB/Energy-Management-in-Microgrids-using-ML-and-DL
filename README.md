@@ -6,7 +6,7 @@ Microgrids integrate **renewable energy sources**, **energy storage systems**, a
 - Reducing **operational costs**
 - Improving **energy efficiency**
 
-Traditional methods struggle with challenges like **load forecasting**, **renewable energy variability**, and **real-time optimization**. Our solution leverages **XG Boost (ML) and Deep Neural Network (DL)** to address these issues effectively. 🧠⚡
+Traditional methods struggle with challenges like **load forecasting**, **renewable energy variability**, and **real-time optimization**. Our solution leverages **XG Boost (ML) and Deep Neural Network (DL)** to address these issues effectively. 🧠⚡ (video demonstration)[https://www.youtube.com/watch?v=UaSsGjpDEFM&t=14s]
 
 ---
 
